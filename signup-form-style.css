@@ -1,0 +1,191 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(./Assets/Fonts/Norse-Bold.otf);
+}
+
+:root {
+    --rb: 1px solid red;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    /* border: var(--rb); */
+}
+
+body {
+    background-image: url(./Assets/Images/odin-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN */
+
+#main {
+    display: flex;
+}
+
+/* LEFT */
+
+#left {
+    display: flex;
+    justify-content: center;
+    width: 35vw;
+
+    color: white;
+}
+
+#semi-transparent-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 3.5lh;
+    width: 100%;
+
+    margin-top: 35%;
+
+    font-size: 2rem;
+    background-color: rgba(0,0,0,0.6);
+}
+
+#image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 3lh;
+}
+
+#image-box > img {
+    height: 100%;
+}
+
+#title {
+    font-family: "Norse-Bold", sans-serif;
+}
+
+/* RIGHT */
+
+#right {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #F9FAFB;
+}
+
+/* CTA */
+
+#cta-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 35vh;
+}
+
+#cta-section > h3 {
+    width: 55ch;
+
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+/* FORM */
+
+#form-section {
+    height: 35vh;
+    padding: 0 10%;
+
+    background-color: white;
+    box-shadow: 0 5px 5px grey;
+}
+
+#form-section > h3 {
+    margin: 0.8lh 0;
+}
+
+#form-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-row + .form-row {
+    margin-top: 0.8lh;
+}
+
+label {
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.2ch;
+}
+
+input {
+    width: 80%;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    font-size: 0.85em;
+    padding: 0.25lh 1ch;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+}
+
+#error {
+    color: red;
+    font-size: 0.75em;
+}
+
+/* BOTTOM */
+
+#bottom-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 30vh;
+    
+    padding: 0 10%;
+}
+
+#submit-button {
+    width: 25%;
+
+    font-weight: 600;
+
+    color: white;
+    background-color: grey;
+
+    border: none;
+    border-radius: 5px;
+
+    margin: 5% 0;
+    padding: 0.75lh 5ch;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
